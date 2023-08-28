@@ -1,4 +1,5 @@
 // complete the function
 function solution(string) {
-return(string.replace(/([A-Z])/g, ' $1'));
+  const regex = /[A-Z]/g;
+  return string.replace(regex, ' $&')   
 }
